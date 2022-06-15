@@ -1,0 +1,1 @@
+Projeto de uma Pokedex Orientado a Objeto para a matéria de POO, dirigida pelo professor Everton Coimbra de Araújo no curso de Ciências Da Computação da Universidade Tecnológica Federal do Paraná (UTFPR), campus Medianeira.

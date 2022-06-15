@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+}
+
+.main-login-singup{
+    width: 100%;
+    height: 100%;
+    background-color: #EDE6DB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login-singup{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-image{
+    width: 85%;
+}
+
+.right-login-singup{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login-singup{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: #1A3C40;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #1D5C63;
+}
+
+.card-login-singup > h1{
+    color: #EDE6DB;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #417D7A;
+    color: #EDE6DB;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #3b3b3b;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label{
+    color:#EDE6DB;
+    margin-bottom: 10px;
+}
+
+.textfield > input::placeholder{
+    color: #f2f2f294
+}
+
+.btn-login-singup{
+    width: 100%;
+    padding: 16px 0;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: #EDE6DB;
+    cursor: pointer;
+}
