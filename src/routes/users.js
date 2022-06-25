@@ -19,6 +19,7 @@ router.get("/signup", (req, res) => {
 });
 
 router.post("/signup/new", (req, res) => {
+  console.log(req.body);
   const novoCadastro = {
     userName: req.body.userName,
     userEmail: req.body.userEmail,
@@ -29,8 +30,13 @@ router.post("/signup/new", (req, res) => {
     .save()
     .then(() => {
       console.log("usuario registrado");
+      res.redirect("/");
     })
     .catch((err) => {
+      console.log(err);
+      if (err.errors.userEmail) {
+        res.status(400).send({ message: "Email ja cadastrado" });
+      }
       console.log("Erro ao regitrar");
     });
 });

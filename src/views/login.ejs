@@ -46,18 +46,21 @@
                 <form class="form-login-singup" action="/add" method="POST">
                     <div class="textfield">
                         <label for="email">Email</label>
-                        <input type="text" name="userEmail" placeholder="email">
+                        <input type="text" name="userEmail" placeholder="email" id="userEmail">
+                        <small>Error Message</small>
                     </div>
                     <div class="textfield">
                         <label for="senha">Senha</label>
-                        <input type="password" name="userPass" placeholder="Senha">
+                        <input type="password" name="userPass" placeholder="Senha" id="userPass">
+                        <small>Error Message</small>
                     </div>
-                    <button type="submit" class="btn-login-singup">Login</button>
+                    <button type="submit" class="btn-login-singup"
+                        onclick="return  checkEmail(), checkPass(), checkLog()">Login</button>
                 </form>
             </div>
         </div>
     </div>
-
+    <script src="../controller/signupController.js"></script>
 </body>
 
 </html>

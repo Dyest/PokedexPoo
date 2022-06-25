@@ -84,7 +84,7 @@ body {
 .btn-login-singup{
     width: 100%;
     padding: 16px 0;
-    margin: 25px;
+    margin-top: 20px;
     border: none;
     border-radius: 8px;
     outline: none;
@@ -94,4 +94,22 @@ body {
     color: #2b134b;
     background: #EDE6DB;
     cursor: pointer;
+}
+
+.textfield.success input{
+    border: 2px solid #20ea41
+}
+.textfield.error input{
+    border: 2px solid #ed2314
+}
+
+.textfield.error small{
+    visibility: visible;
+}
+
+.textfield small {
+    visibility: hidden;
+    font-size: 14px;
+    padding-left: 8px;
+    color: #b81b10;
 }
