@@ -14,12 +14,14 @@ router.get("/login", (req, res) => {
   res.render("login");
 });
 
+router.post("/login/new" , (req, res) =>{
+})
+
 router.get("/signup", (req, res) => {
   res.render("cadastro");
 });
 
 router.post("/signup/new", (req, res) => {
-  console.log(req.body);
   const novoCadastro = {
     userName: req.body.userName,
     userEmail: req.body.userEmail,

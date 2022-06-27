@@ -43,7 +43,7 @@
         <div class="right-login-singup">
             <div class="card-login-singup">
                 <h1>LOGIN</h1>
-                <form class="form-login-singup" action="/add" method="POST">
+                <form id="form" onsubmit="handleLogin(event)">
                     <div class="textfield">
                         <label for="email">Email</label>
                         <input type="text" name="userEmail" placeholder="email" id="userEmail">

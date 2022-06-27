@@ -36,6 +36,10 @@ function handleRegister(event) {
     });
 }
 
+// ======================================================//
+
+//===========================================================================//
+
 function checkName() {
   const usernameValue = userName.value.trim();
 
@@ -104,8 +108,6 @@ function checkLog() {
 }
 
 function setErrorFor(input, message) {
-  console.log("aqui");
-  console.log(input, message);
   const formControl = input.parentElement;
   const small = formControl.querySelector("small");
 
